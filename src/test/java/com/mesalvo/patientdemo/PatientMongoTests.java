@@ -44,7 +44,6 @@ public class PatientMongoTests {
         //Given
         var id = 1;
         //When
-//        patientRepository.save(Patient.builder().firstName("Perico").lastName("Palotes").birthDate(LocalDate.of(1981,7,5)).gender(Gender.M).build());
         var patient = patientRepository.findById(id);
 
         //Then
@@ -56,7 +55,6 @@ public class PatientMongoTests {
         //Given
         var searchString = "Pal";
         //When
-//        patientRepository.save(Patient.builder().firstName("Perico").lastName("Palotes").birthDate(LocalDate.of(1981,7,5)).gender(Gender.M).build());
         var patient = patientRepository.findByLastNameStartsWith(searchString);
 
         //Then
